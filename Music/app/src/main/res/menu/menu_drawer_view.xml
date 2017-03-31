@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/songs"
+            android:icon="@drawable/ic_music"
+            android:title="@string/title_song" />
+        <item
+            android:id="@+id/albums"
+            android:icon="@drawable/ic_albums"
+            android:title="@string/title_albums" />
+
+        <item
+            android:id="@+id/artist"
+            android:icon="@drawable/ic_artist"
+            android:title="@string/title_artist" />
+
+        <item
+            android:id="@+id/playlist"
+            android:icon="@drawable/ic_playlist_64"
+            android:title="@string/title_playlist" />
+    </group>
+
+    <item android:title="Others"
+        android:textSize="20sp">
+        <menu>
+            <item
+                android:id="@+id/settings"
+                android:icon="@drawable/ic_settings"
+                android:title="@string/title_setting" />
+            <item
+                android:id="@+id/about_us"
+                android:icon="@drawable/ic_about_us"
+                android:title="@string/title_about_us" />
+            <item
+                android:id="@+id/policy"
+                android:icon="@drawable/ic_policy"
+                android:title="@string/title_policy" />
+        </menu>
+    </item>
+
+</menu>
