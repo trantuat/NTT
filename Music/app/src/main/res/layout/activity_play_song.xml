@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/gray_dark">
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imgMusic"
+        android:src="@drawable/ic_play_512"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp"
+        android:layout_marginLeft="@dimen/activity.main.image.play.margin"
+        android:layout_marginRight="@dimen/activity.main.image.play.margin"
+        android:layout_above="@+id/llConsoleBottom"
+        android:layout_below="@+id/toolBarPlayActivity"
+        android:background="@color/gray_dark"/>
+
+    <LinearLayout
+        android:id="@+id/llConsoleBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvTimeSong"
+                style="@style/TimeValueTheme"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvDurationTime"
+                style="@style/TimeValueTheme"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progress="0"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/tvTimeSong"
+                android:layout_toStartOf="@id/tvDurationTime"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity.play.layout.console.height">
+
+
+            <ImageButton
+                android:id="@+id/imgBtnPlay"
+                android:layout_width="@dimen/activity.play.image.play.size"
+                android:layout_height="@dimen/activity.play.image.play.size"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/activity.play.image.play.margin"
+                android:layout_marginRight="@dimen/activity.play.image.play.margin"
+                android:background="@drawable/bg_button_play" />
+
+            <ImageButton
+                android:id="@+id/imgBtnPrevious"
+                android:layout_width="@dimen/activity.play.image.previous.size"
+                android:layout_height="@dimen/activity.play.image.previous.size"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imgBtnPlay"
+                android:layout_toStartOf="@+id/imgBtnPlay"
+                android:background="@drawable/bg_button_previous" />
+
+            <ImageButton
+                android:id="@+id/imgBtnNext"
+                android:layout_width="@dimen/activity.play.image.next.size"
+                android:layout_height="@dimen/activity.play.image.next.size"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/imgBtnPlay"
+                android:layout_toRightOf="@+id/imgBtnPlay"
+                android:background="@drawable/bg_button_next"/>
+            <ImageButton
+                android:id="@+id/imageRepeat"
+                android:layout_width="@dimen/activity.play.image.repeat.size.small"
+                android:layout_height="@dimen/activity.play.image.repeat.size.small"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/activity.play.image.play.margin"
+                android:layout_marginRight="@dimen/activity.play.image.play.margin"
+                android:layout_toLeftOf="@id/imgBtnPrevious"
+                android:background="@drawable/bg_button_repeat" />
+                 />
+            <ImageButton
+                android:id="@+id/imageShuffle"
+                android:layout_width="@dimen/activity.play.image.shuffle.size.small"
+                android:layout_height="@dimen/activity.play.image.shuffle.size.small"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/activity.play.image.play.margin"
+                android:layout_marginRight="@dimen/activity.play.image.play.margin"
+                android:layout_toRightOf="@id/imgBtnNext"
+                android:background="@drawable/bg_button_shuffle" />
+            />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity.play.layout.view.margin_bottom" />
+    </LinearLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBarPlayActivity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imgBtnBack"
+                android:layout_width="@dimen/activity.play.image.back.size.small"
+                android:layout_height="@dimen/activity.play.image.back.size.small"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_exit"/>
+
+            <TextView
+                android:id="@+id/tvNameSongPlayActivity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/activity.play.textview.song.margin"
+                android:layout_marginStart="@dimen/activity.play.textview.song.margin"
+                android:layout_toEndOf="@id/imgBtnBack"
+                android:layout_toLeftOf="@+id/imgBtnTimer"
+                android:layout_toRightOf="@+id/imgBtnBack"
+                android:layout_toStartOf="@+id/imgBtnTimer"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:clickable="true"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <ImageButton
+                android:id="@+id/imgBtnTimer"
+                android:layout_width="@dimen/activity.play.image.timer.size.small"
+                android:layout_height="@dimen/activity.play.image.timer.size.small"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/activity.play.image.timer.margin"
+                android:layout_marginRight="@dimen/activity.play.image.timer.margin"
+                android:background="@drawable/bg_button_notimer" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+</RelativeLayout>

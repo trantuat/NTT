@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/play_laylist"
+        android:title="Play"></item>
+    <item
+        android:id="@+id/delete_playlist"
+        android:title="Delete"></item>
+    <item
+        android:id="@+id/rename_playlist"
+        android:title="Rename"></item>
+
+</menu>

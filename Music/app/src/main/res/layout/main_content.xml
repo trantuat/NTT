@@ -16,7 +16,6 @@
             android:background="@color/gray_dark"
             app:tabGravity="fill"
             app:tabIndicatorColor="@color/white"
-            app:tabTextColor="@color/white"
             app:tabMode="fixed" />
     </android.support.design.widget.AppBarLayout>
 
@@ -24,7 +23,120 @@
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@+id/rlplay"
         android:layout_below="@+id/app" />
 
+    <RelativeLayout
+        android:elevation="10dp"
+        android:id="@+id/rlplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_play_main"
+        android:focusable="true"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_marginTop="-10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
+        <RelativeLayout
+            android:paddingTop="10dp"
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity.play.layout.console.height.small"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:id="@+id/imgSong"
+                android:src="@drawable/ic_disk"
+                android:layout_width="@dimen/activity.main.image.song.size"
+                android:layout_height="@dimen/activity.main.image.song.size"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/activity.main.image.song.margin" />
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/imgSong"
+                android:layout_toLeftOf="@+id/rlMainButtons"
+                android:layout_toRightOf="@+id/imgSong"
+                android:layout_toStartOf="@+id/rlMainButtons"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvNameSong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity.main.textview.song.margin_bottom"
+                    android:lines="1"
+                    android:textColor="@android:color/white"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textSize="@dimen/activity.main.textview.text_size"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/tvNameSinger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textSize="@dimen/activity.main.textview.text_size" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlMainButtons"
+                android:layout_width="@dimen/activity.main.layout.console.width"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/activity.main.image.play.margin"
+                android:layout_marginRight="@dimen/activity.main.image.play.margin">
+
+                <ImageButton
+                    android:id="@+id/imgBtnPrevious"
+                    android:layout_width="@dimen/activity.play.image.previous.size.small"
+                    android:layout_height="@dimen/activity.play.image.previous.size.small"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/imgBtnPlay"
+                    android:layout_toStartOf="@+id/imgBtnPlay"
+                    android:background="@drawable/bg_button_previous" />
+
+                <ImageButton
+                    android:id="@+id/imgBtnNext"
+                    android:layout_width="@dimen/activity.play.image.next.size.small"
+                    android:layout_height="@dimen/activity.play.image.next.size.small"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imgBtnPlay"
+                    android:layout_toRightOf="@+id/imgBtnPlay"
+                    android:background="@drawable/bg_button_next" />
+
+                <ImageButton
+                    android:id="@+id/imgBtnPlay"
+                    android:layout_width="@dimen/activity.play.image.play.size.small"
+                    android:layout_height="@dimen/activity.play.image.play.size.small"
+                    android:layout_marginLeft="@dimen/activity.play.image.play.margin"
+                    android:layout_marginRight="@dimen/activity.play.image.play.margin"
+                    android:background="@drawable/ic_play_play_activity"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
 </RelativeLayout>

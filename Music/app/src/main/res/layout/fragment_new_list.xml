@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:id="@+id/linearLayout"
+        android:background="@drawable/bg_highlight_item"
+        android:paddingTop="@dimen/activity.main.image.play.margin"
+        android:paddingBottom="@dimen/activity.main.image.play.margin">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_add"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/imgAdd"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/add_new_playlist"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:id="@+id/tvAdd"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@android:color/black" />
+
+    <android.support.v7.widget.RecyclerView
+        android:background="@android:color/transparent"
+        android:id="@+id/recycle_view_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:fitsSystemWindows="true"
+        android:layout_marginBottom="10dp"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

@@ -1,0 +1,98 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_notify"
+    android:layout_width="wrap_content"
+    android:layout_height="128dp"
+    android:background="@color/gray_dark"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true">
+
+    <ImageView
+        android:id="@+id/imgSong"
+        android:src="@drawable/ic_launch"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/activity.main.image.song.margin" />
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/imgSong"
+        android:layout_toRightOf="@+id/imgSong"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvNameSong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity.main.textview.song.margin_bottom"
+            android:lines="1"
+            android:textColor="@android:color/white"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textSize="@dimen/activity.main.textview.text_size"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tvNameSinger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textSize="@dimen/activity.main.textview.text_size" />
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/rlMainButtons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/activity.main.image.play.margin"
+            android:layout_marginRight="@dimen/activity.main.image.play.margin">
+
+            <ImageView
+                android:id="@+id/imgBtnPrevious"
+                android:layout_width="@dimen/activity.play.image.previous.size.small"
+                android:layout_height="@dimen/activity.play.image.previous.size.small"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imgBtnPlay"
+                android:layout_toStartOf="@+id/imgBtnPlay"
+                android:background="@drawable/bg_button_previous" />
+
+            <ImageView
+                android:id="@+id/imgBtnNext"
+                android:layout_width="@dimen/activity.play.image.next.size.small"
+                android:layout_height="@dimen/activity.play.image.next.size.small"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/imgBtnPlay"
+                android:layout_toRightOf="@+id/imgBtnPlay"
+                android:background="@drawable/bg_button_next" />
+
+            <ImageView
+                android:id="@+id/imgBtnPlay"
+                android:layout_width="@dimen/activity.play.image.play.size.small"
+                android:layout_height="@dimen/activity.play.image.play.size.small"
+                android:layout_marginLeft="@dimen/activity.play.image.play.margin"
+                android:layout_marginRight="@dimen/activity.play.image.play.margin"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_equalizer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.nghi.music.Activity.activity.EqualizerActivity">
+
+    <!--<Spinner-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:id="@+id/spinner_frequency"-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="wrap_content"></Spinner>-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:text="Equalizer"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:textSize="20sp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginBottom="10dp"/>-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<TextView-->
+            <!--android:text="DB"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:id="@+id/tvleft_1"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:gravity="center"/>-->
+        <!--<TextView-->
+            <!--android:text="DB"-->
+            <!--android:id="@+id/tvright_1"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:gravity="center"/>-->
+        <!--<SeekBar-->
+            <!--android:id="@+id/seekBar_1"-->
+            <!--android:layout_toRightOf="@+id/tvleft_1"-->
+            <!--android:layout_toLeftOf="@+id/tvright_1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<TextView-->
+            <!--android:text="DB"-->
+            <!--android:id="@+id/tvleft_2"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:gravity="center"/>-->
+        <!--<TextView-->
+            <!--android:text="DB"-->
+            <!--android:id="@+id/tvright_2"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:gravity="center"/>-->
+        <!--<SeekBar-->
+            <!--android:id="@+id/seekBar_2"-->
+            <!--android:layout_toRightOf="@+id/tvleft_2"-->
+            <!--android:layout_toLeftOf="@+id/tvright_2"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="match_parent"/>-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<TextView-->
+            <!--android:text="DB"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:id="@+id/tvleft_3"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:gravity="center"/>-->
+        <!--<TextView-->
+            <!--android:text="DB"-->
+            <!--android:id="@+id/tvright_3"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:gravity="center"/>-->
+        <!--<SeekBar-->
+            <!--android:id="@+id/seekBar_3"-->
+            <!--android:layout_toRightOf="@+id/tvleft_3"-->
+            <!--android:layout_toLeftOf="@+id/tvright_3"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+    <!--</RelativeLayout>-->
+    <!--<RelativeLayout-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<TextView-->
+            <!--android:text="DB"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:id="@+id/tvleft_4"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:gravity="center"/>-->
+        <!--<TextView-->
+            <!--android:text="DB"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:id="@+id/tvright_4"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:gravity="center"/>-->
+        <!--<SeekBar-->
+            <!--android:id="@+id/seekBar_4"-->
+            <!--android:layout_toRightOf="@+id/tvleft_4"-->
+            <!--android:layout_toLeftOf="@+id/tvright_4"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+    <!--</RelativeLayout>-->
+    <!--<RelativeLayout-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<TextView-->
+            <!--android:text="DB"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:id="@+id/tvleft_5"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:gravity="center"/>-->
+        <!--<TextView-->
+            <!--android:text="DB"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:id="@+id/tvright_5"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:gravity="center"/>-->
+        <!--<SeekBar-->
+            <!--android:id="@+id/seekBar_5"-->
+            <!--android:layout_toRightOf="@+id/tvleft_5"-->
+            <!--android:layout_toLeftOf="@+id/tvright_5"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+    <!--</RelativeLayout>-->
+
+
+</LinearLayout>
